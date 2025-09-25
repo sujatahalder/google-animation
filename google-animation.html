@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Animation</title>
+    <style>
+        body{
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .dots{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+        .dot{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            /* animation: bounce 0.6s infinite alternate ease-in-out; */
+            animation-name: bounce;
+            animation-duration: 0.6s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .dot:nth-child(1){
+            background-color: #4285F4;
+            animation-delay: 0s;
+        }       
+        .dot:nth-child(2){
+            background-color: #EA4335;
+            animation-delay: 0.15s
+        }
+        .dot:nth-child(3){
+            background-color: #FBBC05;
+            animation-delay: 0.3s
+        }
+        .dot:nth-child(4){
+            background-color: #34A853;
+            animation-delay: 0.45s
+        }
+        @keyframes bounce{
+            from{
+                transform: translateY(0);
+            }
+            to{
+                transform: translateY(-15px);
+            }
+        }
+     </style
+   
+</head>
+<body>
+    <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>    
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</body>
+</html>
